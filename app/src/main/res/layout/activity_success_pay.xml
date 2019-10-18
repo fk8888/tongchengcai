@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ninetaildemonfox.zdl.tongcheng_cai.aty.SuccessPayActivity">
+
+    <include layout="@layout/title_layout_top" />
+
+    <TextView
+        android:id="@+id/text_title_success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:drawablePadding="20dp"
+        android:drawableTop="@mipmap/icon_success"
+        android:gravity="center_horizontal"
+        android:text="支付成功"
+        android:textColor="@color/blackColor"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/text_context"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="您已经获得查看方案的通道"
+        android:textColor="@color/text_gray_color"
+        android:textSize="15dp" />
+
+
+    <TextView
+        android:id="@+id/text_success"
+        android:layout_width="87dp"
+        android:layout_height="27dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_red_text_bg"
+        android:gravity="center"
+        android:text="查看方案"
+        android:textColor="@color/colorAccent"
+        android:textSize="13dp" />
+</LinearLayout>

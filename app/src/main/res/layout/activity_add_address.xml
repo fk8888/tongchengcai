@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ninetaildemonfox.zdl.tongcheng_cai.aty.AddAddressActivity">
+
+    <include layout="@layout/title_layout_top" />
+
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/whileColor"
+        android:gravity="center_vertical"
+        android:hint="收货人姓名"
+        android:paddingLeft="10dp"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/edit_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/whileColor"
+        android:gravity="center_vertical"
+        android:hint="手机号码"
+        android:maxLength="11"
+        android:inputType="phone|number"
+        android:paddingLeft="10dp"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/text_address"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/whileColor"
+        android:drawableRight="@mipmap/icon_down"
+        android:gravity="center_vertical"
+        android:hint="所在地区"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="15dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/whileColor">
+
+        <EditText
+            android:id="@+id/edit_detailed_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whileColor"
+            android:gravity="center_vertical"
+            android:hint="街道、小区门牌等详细地址"
+            android:padding="13dp"
+            android:paddingLeft="10dp"
+            android:textSize="15dp" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/text_preservation"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_margin="13dp"
+        android:background="@drawable/shape_drawable_login"
+        android:gravity="center"
+        android:text="保存"
+        android:textColor="@color/whileColor"
+        android:textSize="16dp" />
+
+
+</LinearLayout>

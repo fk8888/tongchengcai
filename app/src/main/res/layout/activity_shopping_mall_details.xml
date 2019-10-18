@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.ninetaildemonfox.zdl.tongcheng_cai.aty.ShoppingMallDetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageTitle"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:src="@mipmap/icon_commodity_bg" />
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whileColor"
+                android:padding="10dp"
+                android:text="商品名称"
+                android:textColor="@color/blackColor"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whileColor"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/text_integral_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/icon_mall_integration"
+                    android:drawablePadding="10dp"
+                    android:text="200"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/text_exchange_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="兑换量：1.5万"
+                    android:textColor="@color/text_gray_666666"
+                    android:textSize="11dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/whileColor"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="15dp"
+                    android:background="@color/colorAccent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="商品详情" />
+
+            </LinearLayout>
+
+            <WebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/text_translate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="兑换"
+        android:textColor="@color/whileColor"
+        android:textSize="17dp" />
+
+    <ImageView
+        android:id="@+id/imageViewFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:src="@mipmap/icon_mall_return" />
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text_tag"
+    android:layout_width="87dp"
+    android:layout_height="29dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/shape_drawable_black_bg"
+    android:gravity="center"
+    android:text="全部"
+    android:textColor="@color/blackColor"
+    android:textSize="13dp" />

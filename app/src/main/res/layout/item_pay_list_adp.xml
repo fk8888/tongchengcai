@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginTop="1dp"
+    android:background="@color/whileColor">
+    <!--android:drawableLeft="@mipmap/ci_pay_wallet"-->
+    <TextView
+        android:id="@+id/text_pay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="1dp"
+        android:background="@color/whileColor"
+        android:drawablePadding="10dp"
+        android:drawableRight="@mipmap/ic_circular_false"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="支付宝"
+        android:textColor="@color/blackColor" />
+
+</FrameLayout>

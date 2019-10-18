@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/icon_code_bg"
+    android:orientation="vertical"
+    tools:context="com.ninetaildemonfox.zdl.tongcheng_cai.aty.MyPromotionCodeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/image_left_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@mipmap/icon_return_white" />
+
+        <TextView
+            android:id="@+id/text_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的推广码"
+            android:textColor="@color/whileColor"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image_head"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="53dp"
+        tools:src="@mipmap/icon_code_head" />
+
+    <TextView
+        android:id="@+id/text_nick_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@color/whileColor"
+        tools:text="九尾妖狐" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="和我一起使用同城彩，不出门也可以买彩票"
+        android:textColor="@color/whileColor" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/icon_code_line" />
+
+    <TextView
+        android:id="@+id/text_invite_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@color/whileColor"
+        android:textSize="20dp"
+        tools:text="260326" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/icon_code_line" />
+
+
+    <ImageView
+        android:id="@+id/image_invite_path"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        tools:src="@mipmap/icon_code_code" />
+</LinearLayout>

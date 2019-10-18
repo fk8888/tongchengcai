@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ninetaildemonfox.zdl.tongcheng_cai.aty.MyIntegralActivity">
+
+    <include layout="@layout/title_layout_top" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icon_money_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:text="当前积分"
+                android:textColor="@color/whileColor" />
+
+            <TextView
+                android:id="@+id/text_integral_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:drawableBottom="@mipmap/icon_integration_shadow"
+                android:gravity="center"
+                tools:text="26030"
+                android:textColor="@color/whileColor"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/text_integral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:gravity="right"
+                android:text="查看明细  >"
+                android:textColor="@color/whileColor"
+                android:textSize="13dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="140dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="97dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:background="@color/whileColor">
+
+                <ImageView
+                    android:id="@+id/image_left_one"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="13dp"
+                    android:src="@mipmap/icon_integration_integration" />
+
+                <TextView
+                    android:id="@+id/text_title_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_toRightOf="@+id/image_left_one"
+                    android:text="积分兑换"
+                    android:textColor="@color/blackColor"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_title_one"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/image_left_one"
+                    android:text="赚取积分可以在积分商场兑换商品"
+                    android:textColor="@color/text_gray_666666"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/text_shop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="13dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/image_left_one"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@mipmap/icon_money_return"
+                    android:text="前往商城"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="97dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/whileColor">
+
+                <ImageView
+                    android:id="@+id/image_left_two"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="13dp"
+                    android:src="@mipmap/icon_integration_sign" />
+
+                <TextView
+                    android:id="@+id/text_title_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_toRightOf="@+id/image_left_two"
+                    android:text="签到领积分"
+                    android:textColor="@color/blackColor"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_title_two"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/image_left_two"
+                    android:text="连续签到可以获得更多积分呦"
+                    android:textColor="@color/text_gray_666666"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/text_sign_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="13dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/image_left_two"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@mipmap/icon_money_return"
+                    android:text="前往签到"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="97dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/whileColor">
+
+                <ImageView
+                    android:id="@+id/image_left_three"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="13dp"
+                    android:src="@mipmap/icon_integration_buy" />
+
+                <TextView
+                    android:id="@+id/text_title_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_toRightOf="@+id/image_left_three"
+                    android:text="购彩领积分"
+                    android:textColor="@color/blackColor"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_title_three"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/image_left_three"
+                    android:text="购买彩票获得积分"
+                    android:textColor="@color/text_gray_666666"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="13dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/image_left_three"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@mipmap/icon_money_return"
+                    android:text="前往购彩"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

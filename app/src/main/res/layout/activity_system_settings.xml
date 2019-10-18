@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ninetaildemonfox.zdl.tongcheng_cai.aty.SystemSettingsActivity">
+
+
+    <include layout="@layout/title_layout_top" />
+
+    <LinearLayout
+        android:id="@+id/ll_cache"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="清除缓存"
+            android:textColor="@color/blackColor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/text_getCacheSize"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/icon_down"
+            android:gravity="right|center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="2.5M"
+            android:textColor="@color/text_gray_666666"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:drawablePadding="10dp"
+        android:drawableRight="@mipmap/icon_down"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="关于我们"
+        android:textColor="@color/blackColor"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击发送消息"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/text_out_login"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_margin="13dp"
+        android:background="@drawable/shape_drawable_login"
+        android:gravity="center"
+        android:text="退出"
+        android:textColor="@color/whileColor"
+        android:textSize="16dp" />
+</LinearLayout>

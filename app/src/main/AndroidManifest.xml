@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ninetaildemonfox.zdl.tongcheng_cai">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_about_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".aty.OrderDetailsTwoActivity"></activity>
+        <!-- ========今日头条适配========= -->
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="414" />
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="736" /> <!-- ========今日头条适配========= -->
+        <!-- 启动界面 -->
+        <activity
+            android:name=".aty.SplashActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- 主界面 -->
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask" /> <!-- 积分详情 -->
+        <activity
+            android:name=".aty.ShoppingMallDetailsActivity"
+            android:launchMode="singleTop" /> <!-- 提交兑换 -->
+        <activity
+            android:name=".aty.SubmitExchangeActivity"
+            android:launchMode="singleTop" /> <!-- 登录界面 -->
+        <activity
+            android:name=".aty.LoginActivity"
+            android:launchMode="singleTop" /> <!-- 注册界面 密码 绑定等 -->
+        <activity
+            android:name=".aty.RegisterActivity"
+            android:launchMode="singleTop" /> <!-- 中奖名单 -->
+        <activity
+            android:name=".aty.WinningListActivity"
+            android:launchMode="singleTop" /> <!-- 签到界面 -->
+        <activity
+            android:name=".aty.SignInActivity"
+            android:launchMode="singleTop" /> <!-- 论坛中心 -->
+        <activity
+            android:name=".aty.ForumActivity"
+            android:launchMode="singleTop" /> <!-- 论坛正文 -->
+        <activity
+            android:name=".aty.ForumTextActivity"
+            android:launchMode="singleTop" /> <!-- 发布内容 -->
+        <activity
+            android:name=".aty.PublishContentActivity"
+            android:launchMode="singleTop" /> <!-- 比赛详情 -->
+        <activity
+            android:name=".aty.DetailsOfCompetitionActivity"
+            android:launchMode="singleTop" /> <!-- 开奖  彩票详情 -->
+        <activity
+            android:name=".aty.DetailsAwardActivity"
+            android:launchMode="singleTop" /> <!-- 跟单信息 -->
+        <activity
+            android:name=".aty.DocumentaryInformationActivity"
+            android:launchMode="singleTop" /> <!-- 推荐详情 -->
+        <activity
+            android:name=".aty.RecommendationDetailsActivity"
+            android:launchMode="singleTop" /> <!-- 支付成功界面 -->
+        <activity
+            android:name=".aty.SuccessPayActivity"
+            android:launchMode="singleTop" /> <!-- 储值 -->
+        <activity
+            android:name=".aty.StoredValueActivity"
+            android:launchMode="singleTop" /> <!-- 跟单的订单详情 -->
+        <activity
+            android:name=".aty.OrderDetailsActivity"
+            android:launchMode="singleTop" /> <!-- 战绩 -->
+        <activity
+            android:name=".aty.RecordActivity"
+            android:launchMode="singleTop" /> <!-- 个人信息 -->
+        <activity
+            android:name=".aty.PersonalActivity"
+            android:launchMode="singleTop" /> <!-- 钱包 -->
+        <activity
+            android:name=".aty.WalletActivity"
+            android:launchMode="singleTop" /> <!-- 1账户明细 2 提现明细 3积分明细 -->
+        <activity
+            android:name=".aty.DetailedActivity"
+            android:launchMode="singleTop" /> <!-- 我的论坛 -->
+        <activity
+            android:name=".aty.ForumMyActivity"
+            android:launchMode="singleTop" /> <!-- 余额清账 -->
+        <activity
+            android:name=".aty.BalanceClearActivity"
+            android:launchMode="singleTop" /> <!-- 银行卡弹框 -->
+        <activity
+            android:name=".aty.DialogButtonActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/share_style" /> <!-- 绑定银行卡界面 -->
+        <activity
+            android:name=".aty.BankCardActivity"
+            android:launchMode="singleTop" /> <!-- 开户行 -->
+        <activity
+            android:name=".aty.OpenAccountActivity"
+            android:launchMode="singleTop" /> <!-- 银行卡管理 -->
+        <activity
+            android:name=".aty.BankCardManagementActivity"
+            android:launchMode="singleTop" /> <!-- 所有评论 -->
+        <activity
+            android:name=".aty.AllCommentsActivity"
+            android:launchMode="singleTop" /> <!-- 实名认证 -->
+        <activity
+            android:name=".aty.AuthenticationActivity"
+            android:launchMode="singleTop" /> <!-- 1彩票订单 2 跟单订单 3商场订单 -->
+        <activity
+            android:name=".aty.LotteryOrderActivity"
+            android:launchMode="singleTop" /> <!-- 竞彩的订单详情 -->
+        <activity
+            android:name=".aty.BiddingOrderActivity"
+            android:launchMode="singleTop" /> <!-- 跟单的订单详情 -->
+        <!-- 我的推广码 -->
+        <activity
+            android:name=".aty.MyPromotionCodeActivity"
+            android:launchMode="singleTop" /> <!-- 系统设置 -->
+        <activity
+            android:name=".aty.SystemSettingsActivity"
+            android:launchMode="singleTop" /> <!-- 关于我们 -->
+        <activity
+            android:name=".aty.AboutUsActivity"
+            android:launchMode="singleTop" /> <!-- 收货地址管理 -->
+        <activity
+            android:name=".aty.ReceivingAddressActivity"
+            android:launchMode="singleTop" /> <!-- 添加收货地址 -->
+        <activity
+            android:name=".aty.AddAddressActivity"
+            android:launchMode="singleTop" /> <!-- 城市选择器 -->
+        <activity
+            android:name=".aty.SelectAddressActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/share_style" /> <!-- 我的积分 -->
+        <activity
+            android:name=".aty.MyIntegralActivity"
+            android:launchMode="singleTop" />
+        <!-- 店铺详情 -->
+        <activity
+            android:name=".aty.ShopDetailsActivity"
+            android:launchMode="singleTop" /> <!-- 暂停购买    1 排列三 2 排列五   3 七星彩  4大乐透 -->
+        <activity
+            android:name=".aty.SuspensionPurchaseActivity"
+            android:launchMode="singleTop" /> <!-- 0竞彩足球  1竞猜篮球 -->
+        <activity
+            android:name=".aty.WonderfulFootballActivity"
+            android:launchMode="singleTop" /> <!-- 筛选界面 -->
+        <activity
+            android:name=".aty.ScreenActivity"
+            android:launchMode="singleTop" /> <!-- 添加/编辑赛事 -->
+        <activity
+            android:name=".aty.AddingEventsActivity"
+            android:launchMode="singleTop" /> <!-- 过关方式 -->
+        <activity
+            android:name=".aty.ModeBottomActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/share_style" /> <!-- 比分展开全部 -->
+        <activity
+            android:name=".aty.ScoreAllActivity"
+            android:launchMode="singleTop" /> <!-- 引导界面 -->
+        <activity
+            android:name=".aty.GuidePageActivity"
+            android:launchMode="singleTop" /> <!-- 往期开奖 -->
+        <activity android:name=".aty.PrizeInThrPastActivity" /> <!-- 店铺列表 -->
+        <activity android:name=".aty.ShopListActivity" /> <!-- 0——跟单规则 1——注册协议 2——积分规则 3——签到规则 -->
+        <activity android:name=".aty.DocumentaryPlanningActivity" /> <!-- 钱包规则 -->
+        <activity android:name=".aty.WalletRulesActivity" />
+    </application>
+
+</manifest>

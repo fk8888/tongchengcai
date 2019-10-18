@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ninetaildemonfox.zdl.tongcheng_cai.aty.BalanceClearActivity">
+
+
+    <include layout="@layout/title_layout_top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="13dp"
+        android:background="@mipmap/icon_money_rectangle"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:id="@+id/ll_binding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="11dp"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="提现方式"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/text_bank_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="20dp"
+                android:drawableRight="@mipmap/icon_down"
+                android:text="请选择提现方式"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:background="@color/white"
+            android:padding="15dp"
+            android:text="提现金额"
+            android:textSize="11dp" />
+
+        <EditText
+            android:id="@+id/edit_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:background="@color/white"
+            android:hint="请输入提现金额"
+            android:inputType="number|numberDecimal"
+            android:padding="15dp"
+            android:textColor="@color/blackColor"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/common_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/text_withdrawable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="可提现金额200.00,"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/text_all_withdrawals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="全部提现"
+                android:textColor="@color/colorAccent"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_sure"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:background="@drawable/shape_drawable_login"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="17dp" />
+
+
+</LinearLayout>

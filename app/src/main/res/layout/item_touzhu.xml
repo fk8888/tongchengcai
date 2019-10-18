@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/whileColor"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/list_item_result"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/whileColor"
+            android:gravity="center"
+            android:text="sheng"
+            android:textColor="@color/text_gray_666666"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/list_item_value"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@color/whileColor"
+            android:text="sheng"
+            android:textColor="@color/text_gray_666666"
+            android:textSize="11dp" />
+    </LinearLayout>
+
+</LinearLayout>

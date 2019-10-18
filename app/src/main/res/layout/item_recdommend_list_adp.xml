@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whileColor"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_top_list" />
+
+    <TextView
+        android:id="@+id/text_push_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="最近有4脸红的成绩，状态不错！周二继续有亚冠西亚赛区的比赛，不妨继续精选分析为你送上！文末有比分赠送！"
+        android:textColor="@color/blackColor"
+        android:textSize="11dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/ll_gray_bg"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/text_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="星期二001"
+            android:textColor="@color/text_gray_666666"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/text_home_vs_guest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="多哈杜海勒  vs  多哈萨德"
+            android:textColor="@color/blackColor"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/text_play_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="￥28"
+            android:textColor="@color/colorAccent"
+            android:textSize="11dp" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

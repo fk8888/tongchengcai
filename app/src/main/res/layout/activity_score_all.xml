@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ninetaildemonfox.zdl.tongcheng_cai.aty.ScoreAllActivity">
+
+    <include layout="@layout/title_layout_top" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="27dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_text_bg_blue"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/text_color_blue" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerViewLing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="27dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_text_bg_green"
+                    android:gravity="center"
+                    android:text="-1"
+                    android:textColor="@color/text_football" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerViewfuyi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="27dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_text_bg_blue"
+                    android:gravity="center"
+                    android:text="总进球数"
+                    android:textColor="@color/text_color_blue" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerViewTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="27dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_text_bg_blue"
+                    android:gravity="center"
+                    android:text="半全场"
+                    android:textColor="@color/text_color_blue" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerViewDoubleResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_gone_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="27dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_text_bg_red"
+                    android:gravity="center"
+                    android:text="胜"
+                    android:textColor="@color/text_football" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerViewWin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_gone_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="27dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_text_bg_blue"
+                    android:gravity="center"
+                    android:text="平"
+                    android:textColor="@color/text_color_blue" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerViewFlat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_gone_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="27dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_text_bg_green"
+                    android:gravity="center"
+                    android:text="负"
+                    android:textColor="@color/text_football" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerViewNegative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <include layout="@layout/bottom_sure_cancel" />
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:background="@color/whileColor"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/image_head"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/icon_code_head" />
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/image_head"
+            android:text="发布人昵称"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/image_head"
+            android:text="2019/08/05"
+            android:textSize="12dp" />
+
+
+        <TextView
+            android:id="@+id/text_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@mipmap/icon_home_comment"
+            android:drawablePadding="5dp"
+            android:text="207"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/text_snap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="9dp"
+            android:layout_toStartOf="@+id/text_comment"
+            android:drawableLeft="@mipmap/icon_home_snap_true"
+            android:drawablePadding="5dp"
+            android:text="207"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_post_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="最近有4脸红的成绩，状态不错！周二继续有亚冠西亚赛区的比赛，不妨继续精选分析为你送上！文末有比分赠送！"
+        android:textColor="@color/textColor"
+        android:textSize="13dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

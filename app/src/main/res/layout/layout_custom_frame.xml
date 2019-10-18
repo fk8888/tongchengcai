@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ll_bg_custom_frame"
+    android:orientation="vertical"
+    android:paddingBottom="20dp">
+
+    <ImageView
+        android:id="@+id/iamge_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:src="@mipmap/icon_close" />
+
+    <ImageView
+        android:layout_width="245dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@mipmap/icon_award_empty" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-10dp"
+        android:text="暂不支持选胆功能" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_red"
+        android:gravity="center"
+        android:text="继续购彩"
+        android:textColor="@color/whileColor"
+
+        />
+
+</LinearLayout>

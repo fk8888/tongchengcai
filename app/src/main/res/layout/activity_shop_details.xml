@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ninetaildemonfox.zdl.tongcheng_cai.aty.ShopDetailsActivity">
+
+    <include layout="@layout/title_layout_top" />
+
+    <TextView
+        android:id="@+id/text_store_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whileColor"
+        android:padding="10dp"
+        android:text="彩票站名字"
+        android:textColor="@color/blackColor"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/text_store_hours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whileColor"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="营业时间：10:00-22:00"
+        android:textColor="@color/text_gray_color"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/text_store_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whileColor"
+        android:padding="10dp"
+        android:text="店铺地址：天津市南开区宾水西道奥园底商"
+        android:textColor="@color/text_gray_color"
+        android:textSize="10dp" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/whileColor" />
+
+
+</LinearLayout>

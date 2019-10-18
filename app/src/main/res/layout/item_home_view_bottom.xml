@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="97dp"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/image_head"
+        android:layout_width="87dp"
+        android:layout_height="87dp"
+        android:src="@mipmap/icon_home_adresspg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/image_head"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/image_head"
+            android:text="头部"
+            android:textColor="@color/blackColor"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_title"
+            android:layout_marginLeft="10dp"
+            android:text="今日推荐"
+            android:textColor="@color/text_gray_color"
+            android:textSize="11dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:text="累积中奖金额"
+            android:textColor="@color/text_gray_color"
+            android:textSize="11dp" />
+        <TextView
+            android:id="@+id/text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_title"
+            android:layout_marginLeft="10dp"
+            android:text="营业时间：10:00-22:00"
+            android:textColor="@color/text_gray_color"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/text_loaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:text="店铺地址：天津市南开区宾水西道奥园底商"
+            android:textColor="@color/text_gray_color"
+            android:textSize="11dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

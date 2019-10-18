@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginLeft="13dp"
+    android:layout_marginRight="13dp"
+    android:layout_marginTop="10dp"
+    android:background="@color/whileColor"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            tools:text="白rap"
+            android:textColor="@color/blackColor"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/text_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="10dp"
+            tools:text="150****8523"
+            android:textColor="@color/blackColor"
+            android:textSize="15dp" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/text_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        tools:text="天津市 南开区 华苑产业园榕苑路15号鑫茂科技园1号楼B座1809室"
+        android:textColor="#777777" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/common_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_circular_false"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:text="设为默认地址"
+            android:textColor="@color/text_gray_666666" />
+
+        <TextView
+            android:id="@+id/text_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@mipmap/icon_take_del"
+            android:drawablePadding="5dp"
+            android:padding="10dp"
+            android:text="删除"
+            android:textColor="@color/text_gray_666666" />
+
+        <TextView
+            android:id="@+id/text_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/text_delete"
+            android:drawableLeft="@mipmap/icon_take_editor"
+            android:drawablePadding="5dp"
+            android:padding="10dp"
+            android:text="编辑"
+            android:textColor="@color/text_gray_666666" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

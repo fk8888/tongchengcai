@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ninetaildemonfox.zdl.tongcheng_cai.fgt.LotteryFragment">
+
+    <include layout="@layout/title_layout_top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/whileColor"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/text_mall_ash"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawablePadding="5dp"
+                android:drawableRight="@mipmap/icon_award_down"
+                android:gravity="center"
+                android:text="即时"
+                android:textColor="@color/text_gray_666666" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/text_convertibility"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="开奖"
+                android:textColor="@color/text_gray_666666" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/home_bg">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycelrView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#7F000000"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/text_immediate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/whileColor"
+                android:drawableRight="@mipmap/icon_award_red_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:text="即时" />
+            <!--android:drawableRight="@mipmap/icon_award_red_right"-->
+
+            <TextView
+                android:id="@+id/text_finish"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="0.5dp"
+                android:background="@color/whileColor"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:text="完场" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

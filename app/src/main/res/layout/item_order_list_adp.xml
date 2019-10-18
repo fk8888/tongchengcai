@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="13dp"
+    android:layout_marginRight="13dp"
+    android:layout_marginTop="13dp"
+    android:background="@color/whileColor"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_order_top" />
+
+    <TextView
+        android:id="@+id/text_buy_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="购买方式：个人"
+        android:textColor="@color/text_gray_666666"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/text_pay_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="投注金额：￥2.00"
+        android:textColor="@color/text_gray_666666"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/text_win_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="中奖金额：￥2.00"
+        android:textColor="@color/text_gray_666666"
+        android:textSize="11dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="支付佣金：￥2.00"
+        android:textColor="@color/text_gray_666666"
+        android:textSize="11dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_lottery_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="投注信息：2串1 1注1倍"
+        android:textColor="@color/text_gray_666666"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/text_create_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="支付时间：2019/08/14 19:55:00"
+        android:textColor="@color/text_gray_666666"
+        android:paddingBottom="10dp"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/text_button"
+        android:layout_width="87dp"
+        android:layout_height="29dp"
+        android:layout_gravity="right"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_red_text_bg"
+        android:gravity="center"
+        android:text="撤单"
+        android:textColor="@color/colorAccent" />
+
+
+</LinearLayout>

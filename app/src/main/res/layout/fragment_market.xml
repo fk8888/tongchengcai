@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ninetaildemonfox.zdl.tongcheng_cai.fgt.MarketFragment">
+
+    <include layout="@layout/title_layout_top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/whileColor"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/text_mall_ash"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawablePadding="5dp"
+                android:drawableRight="@mipmap/icon_mall_ash"
+                android:gravity="center"
+                android:text="积分数"
+                android:textColor="@color/text_gray_666666" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/text_convertibility"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawablePadding="5dp"
+                android:drawableRight="@mipmap/icon_mall_ash"
+                android:gravity="center"
+                android:text="兑换量"
+                android:textColor="@color/text_gray_666666" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/home_bg">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ninetaildemonfox.zdl.tongcheng_cai.aty.BankCardActivity">
+
+
+    <include layout="@layout/title_layout_top" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/whileColor"
+        android:hint="请输入持卡人姓名"
+        android:padding="10dp"
+        android:textColor="@color/blackColor"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/text_open_account"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/whileColor"
+        android:drawableRight="@mipmap/icon_down"
+        android:gravity="center_vertical"
+        android:hint="请选择开户银行"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/blackColor"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/edit_card_number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/whileColor"
+        android:hint="请输入银行卡号"
+        android:inputType="phone|number"
+        android:maxLength="19"
+        android:padding="10dp"
+        android:textColor="@color/blackColor"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/edit_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/whileColor"
+        android:hint="请输入预留手机号"
+        android:inputType="phone|number"
+        android:maxLength="11"
+        android:padding="10dp"
+        android:textColor="@color/blackColor"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/text_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="43dp"
+        android:background="@drawable/shape_drawable_login"
+        android:gravity="center"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+</LinearLayout>

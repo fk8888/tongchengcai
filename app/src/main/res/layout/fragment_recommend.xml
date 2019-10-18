@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ninetaildemonfox.zdl.tongcheng_cai.fgt.RecommendFragment">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:paddingBottom="1dp"
+            app:tabGravity="center"
+            app:tabIndicatorColor="@color/whileColor"
+            app:tabIndicatorFullWidth="false"
+            app:tabIndicatorHeight="3dp"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/whileColor"
+            app:tabTextAppearance="@style/TabTextAppearance"
+            app:tabTextColor="@color/whileColor" />
+
+        <TextView
+            android:id="@+id/text_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="筛选"
+            android:textColor="@color/whileColor"
+            android:textSize="15dp" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/common_line" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/article_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/ll_gone_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/ll_transiucent_bg"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whileColor"
+                android:padding="10dp"
+                android:text="筛选条件" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerVIewCondition"
+                android:layout_width="match_parent"
+                android:background="@color/whileColor"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whileColor"
+                android:padding="10dp"
+                android:text="跟单类型" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerVIewTyep"
+                android:background="@color/whileColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whileColor"
+                android:paddingBottom="10dp"
+                android:paddingTop="50dp">
+
+                <TextView
+                    android:id="@+id/text_reset"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_drawable_black_bg"
+                    android:gravity="center"
+                    android:text="重置"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/text_sure"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_drawable_login"
+                    android:gravity="center"
+                    android:text="确定"
+                    android:textColor="@color/whileColor"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fffe012d</color>
+    <color name="colorPrimaryDark">#fffe012d</color>
+    <color name="colorAccent">#fffe012d</color>
+    <color name="common_line">#ededed</color>
+    <color name="whileColor">#ffffff</color>
+    <color name="textColor">#ff333333</color>
+    <color name="blackColor">#ff333333</color>
+    <color name="text_gray_color">#999999</color>
+    <color name="text_gray_666666">#666666</color>
+    <color name="text_bg_fe">#FE7E01</color>
+    <color name="ll_transiucent_bg">#7F000000</color>
+    <color name="ll_gray_bg">#fff2f2f2</color>
+    <color name="text_yellow_bg">#FEE901</color>
+    <color name="transparent">#00000000</color>
+    <color name="text_football">#AA011F</color>
+    <color name="text_blue_bg">#ff01cbfe</color>
+    <color name="text_color_blue">#0184AA</color>
+    <color name="text_green_bg">#E3FF99</color>
+    <color name="text_color_green">#709802</color>
+    <color name="home_bg">#fff6f6f6</color>
+    <color name="touming">#00ffffff</color>
+</resources>

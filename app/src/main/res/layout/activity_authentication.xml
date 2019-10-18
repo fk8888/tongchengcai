@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ninetaildemonfox.zdl.tongcheng_cai.aty.AuthenticationActivity">
+
+    <include layout="@layout/title_layout_top" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="17dp"
+            android:text="真实姓名"
+            android:textColor="@color/text_gray_666666"
+            android:textSize="13dp" />
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="128dp"
+            android:background="@color/white"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/icon_down"
+            android:gravity="right"
+            android:hint="请输入您的真实姓名"
+            android:padding="17dp"
+            android:textSize="12dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="17dp"
+            android:text="身份证号"
+            android:textColor="@color/text_gray_666666"
+            android:textSize="13dp" />
+
+        <EditText
+            android:id="@+id/edit_idcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="128dp"
+            android:background="@color/white"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/icon_down"
+            android:gravity="right"
+            android:hint="提交后不可更改"
+            android:padding="17dp"
+            android:textSize="12dp" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whileColor"
+        android:padding="13dp"
+        android:text="上传身份证正面"
+        android:textColor="@color/blackColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whileColor"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@mipmap/icon_authentication_line">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/icon_authentication_photo"
+                android:gravity="center"
+                android:text="点击上传" />
+
+            <ImageView
+                android:id="@+id/imageViewPositive"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@mipmap/icon_authentication_line">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:src="@mipmap/icon_authentication_photopositive" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/whileColor"
+        android:padding="13dp"
+        android:text="上传身份证反面"
+        android:textColor="@color/blackColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whileColor"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@mipmap/icon_authentication_line">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/icon_authentication_photo"
+                android:gravity="center"
+                android:text="点击上传" />
+            <ImageView
+                android:id="@+id/imageViewBack"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_phone_1"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@mipmap/icon_authentication_line">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:src="@mipmap/icon_authentication_photoback" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/text_authentication"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="认证"
+        android:textColor="@color/whileColor"
+        android:textSize="20dp" />
+
+</LinearLayout>

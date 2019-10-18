@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ninetaildemonfox.zdl.tongcheng_cai.aty.RecommendationDetailsActivity">
+
+    <include layout="@layout/title_layout_top" />
+
+    <include layout="@layout/item_top_list" />
+
+    <TextView
+        android:id="@+id/text_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="最近有4脸红的成绩，状态不错！周二继续有亚冠西亚赛区的比赛，不妨继续精选分析为你送上！文末有比分赠送！"
+        android:textColor="@color/blackColor"
+        android:textSize="11dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/whileColor"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorAccent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:text="竞足"
+            android:textColor="@color/blackColor"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textSize="10dp"
+            tools:text="截止时间：2019/08/12  21:55" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_week_match_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whileColor"
+        android:padding="10dp"
+        android:text="星期二001/欧巴罗"
+        android:textColor="@color/text_gray_666666"
+        android:textSize="11dp" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_gone_two"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whileColor"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/text_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="竞猜\n(+1)" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="内容意见仅供参考，投注需谨慎！"
+            android:textSize="11dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/whileColor"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="推荐理由"
+                android:textColor="@color/blackColor"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_push_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:background="@color/whileColor">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/text_vs"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:id="@+id/image_zhu"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/icon_award_one" />
+
+            <TextView
+                android:id="@+id/text_home_team_img_path"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="VS"
+                android:textColor="@color/text_gray_color"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/text_vs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="VS"
+            android:textColor="@color/text_gray_color"
+            android:textSize="20dp" />
+
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/text_vs"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:id="@+id/image_ke"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/icon_award_two" />
+
+            <TextView
+                android:id="@+id/text_guest_team_img_path"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="VS"
+                android:textColor="@color/text_gray_color"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_unpaid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:drawableTop="@mipmap/icon_award_buy_empty"
+        android:gravity="center_horizontal"
+        android:paddingTop="50dp"
+        android:text="支付后显示付费方案"
+        android:textColor="@color/text_gray_color"
+        android:textSize="11dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_gone_one"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="支付金额：" />
+
+            <TextView
+                android:id="@+id/text_pay_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="￥20"
+                android:textColor="@color/colorAccent" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_pay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="立即支付"
+            android:textColor="@color/whileColor"
+            android:textSize="17dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

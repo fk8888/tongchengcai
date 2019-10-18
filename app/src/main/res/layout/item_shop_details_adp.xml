@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text_details"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:drawablePadding="10dp"
+    android:drawableTop="@mipmap/icon_football"
+    android:gravity="center"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp"
+    android:text="竞彩足球"
+    android:textColor="@color/blackColor" />

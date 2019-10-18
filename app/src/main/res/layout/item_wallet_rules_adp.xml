@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text_item_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whileColor"
+    android:padding="10dp"
+    android:paddingRight="10dp"
+    android:text="钱包规则"
+    android:textColor="@color/blackColor"
+    android:textSize="15dp" />

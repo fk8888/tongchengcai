@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ninetaildemonfox.zdl.tongcheng_cai.aty.SubmitExchangeActivity">
+
+    <include layout="@layout/title_layout_top" />
+
+    <TextView
+        android:id="@+id/text_add_laction"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/whileColor"
+        android:drawableLeft="@mipmap/icon_mall_increase"
+        android:drawablePadding="13dp"
+        android:drawableRight="@mipmap/icon_down"
+        android:gravity="center_vertical"
+        android:paddingLeft="11dp"
+        android:paddingRight="15dp"
+        android:text="添加收货地址"
+        android:textColor="@color/blackColor"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_address_view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/whileColor">
+
+        <TextView
+            android:id="@+id/text_name_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:padding="10dp"
+            tools:text="张某某  13659296566"
+            android:textColor="@color/blackColor"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/text_receive_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="15dp"
+            android:drawableLeft="@mipmap/icon_mall_adress"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            tools:text="天津市南开区鑫茂科技园B座1809" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingRight="13dp"
+            android:src="@mipmap/icon_down" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/whileColor"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="15dp"
+            android:background="@color/colorAccent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="商品详情" />
+
+    </LinearLayout>
+
+    <include layout="@layout/item_center_order" />
+
+    <LinearLayout
+        android:id="@+id/ll_gone_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/whileColor"
+            android:padding="10dp"
+            android:text="订单信息"
+            android:textColor="@color/text_gray_color"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/text_order_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whileColor"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/text_gray_color"
+            android:textSize="12dp"
+            tools:text=" 订单编号：201986123612361528" />
+
+        <TextView
+            android:id="@+id/text_create_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whileColor"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/text_gray_color"
+            android:textSize="12dp"
+            tools:text=" 兑换时间：2019/08/14 14:30:52" />
+
+        <TextView
+            android:id="@+id/text_delivery_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whileColor"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/text_gray_color"
+            android:textSize="12dp"
+            tools:text=" 发货时间：2019/08/14 14:30:52" />
+
+        <TextView
+            android:id="@+id/text_confirm_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whileColor"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/text_gray_color"
+            android:textSize="12dp"
+            tools:text=" 成交时间：2019/08/14 14:30:52" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+            
+    <RelativeLayout
+        android:id="@+id/rl_sure_gone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/whileColor"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/text_sure"
+            android:layout_width="87dp"
+            android:layout_height="29dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textColor="@color/whileColor"
+            android:textSize="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorAccent"
+            android:text="确认收货"
+            />
+        
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_buttom_gone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="使用积分：" />
+
+            <TextView
+                android:id="@+id/text_jifen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="200"
+                android:textColor="@color/colorAccent" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_redeem_now"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="立即兑换"
+            android:textColor="@color/whileColor"
+            android:textSize="17dp" />
+    </LinearLayout>
+</LinearLayout>

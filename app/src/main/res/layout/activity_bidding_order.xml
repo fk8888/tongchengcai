@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ninetaildemonfox.zdl.tongcheng_cai.aty.BiddingOrderActivity">
+
+    <include layout="@layout/title_layout_top" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whileColor">
+
+                <TextView
+                    android:id="@+id/orderinfo_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="混合过关"
+                    android:textColor="@color/blackColor"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/orderinfo_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:padding="10dp"
+                    android:text="待开奖"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/whileColor"
+                android:padding="10dp"
+                android:text="彩票信息"
+                android:textColor="@color/text_gray_666666"
+                android:textSize="11dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/whileColor">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="订单号"
+                    android:textColor="@color/blackColor"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/orderinfo_listnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:padding="10dp"
+                    android:text="正在获取..."
+                    android:textColor="@color/blackColor"
+                    android:textSize="13dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/whileColor">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="投注金额"
+                    android:textColor="@color/blackColor"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/orderinfo_tmoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:padding="10dp"
+                    android:text="正在获取..."
+                    android:textColor="@color/blackColor"
+                    android:textSize="13dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/whileColor">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="中奖金额："
+                    android:textColor="@color/blackColor"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/orderinfo_getmoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:padding="10dp"
+                    android:text="正在获取..."
+                    android:textColor="@color/blackColor"
+                    android:textSize="13dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/whileColor">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="投注信息："
+                    android:textColor="@color/blackColor"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/orderinfo_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:padding="10dp"
+                    android:text="正在获取..."
+                    android:textColor="@color/blackColor"
+                    android:textSize="13dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/whileColor">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="支付时间："
+                    android:textColor="@color/blackColor"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/orderinfo_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:padding="10dp"
+                    android:text="正在获取..."
+                    android:textColor="@color/blackColor"
+                    android:textSize="13dp" />
+            </FrameLayout>
+
+
+          <FrameLayout
+              android:layout_width="match_parent"
+              android:layout_marginTop="10dp"
+              android:layout_height="wrap_content">
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/whileColor"
+                  android:padding="10dp"
+                  android:text="订单方案"
+                  android:textColor="@color/text_gray_666666"
+                  android:textSize="11dp" />
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:background="@color/whileColor"
+                  android:padding="10dp"
+                  android:text="赔率以实际出票为准"
+                  android:textColor="@color/text_gray_666666"
+                  android:textSize="10dp"
+                  android:layout_gravity="right|center_horizontal"
+                  />
+
+          </FrameLayout>
+
+            <!-- 方案 1-->
+            <LinearLayout
+                android:id="@+id/ll_fangan_one"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffd2d2d2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="69dp"
+                    android:layout_height="match_parent"
+                    android:background="#fff0eff4"
+                    android:gravity="center"
+                    android:text="场次"
+                    android:textColor="@color/text_gray_666666"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="101dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:background="#fff0eff4"
+                    android:gravity="center"
+                    android:text="主队对客队"
+                    android:textColor="@color/text_gray_666666"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="86dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:background="#fff0eff4"
+                    android:gravity="center"
+                    android:text="投注项"
+                    android:textColor="@color/text_gray_666666"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="86dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:background="#fff0eff4"
+                    android:gravity="center"
+                    android:text="彩果"
+                    android:textColor="@color/text_gray_666666"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="67dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:background="#fff0eff4"
+                    android:gravity="center"
+                    android:text="胆"
+                    android:textColor="@color/text_gray_666666"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <!-- 方案 2-->
+            <LinearLayout
+                android:id="@+id/ll_fangan_tow"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"
+                android:background="#ffd2d2d2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="69dp"
+                    android:layout_height="match_parent"
+                    android:background="#fff0eff4"
+                    android:gravity="center"
+                    android:text="场次"
+                    android:textColor="@color/text_gray_666666"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="188dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:background="#fff0eff4"
+                    android:gravity="center"
+                    android:text="主队对客队"
+                    android:textColor="@color/text_gray_666666"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="76dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:background="#fff0eff4"
+                    android:gravity="center"
+                    android:text="投注"
+                    android:textColor="@color/text_gray_666666"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="77dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:background="#fff0eff4"
+                    android:gravity="center"
+                    android:text="彩果"
+                    android:textColor="@color/text_gray_666666"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/text_ticket_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/whileColor"
+                android:padding="10dp"
+                android:text="出票详情"
+                android:textColor="@color/text_gray_666666"
+                android:textSize="11dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:visibility="gone"
+                android:id="@+id/recyclerViewTicketDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/text_no_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/whileColor"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="出票信息暂无"
+                android:textColor="@color/blackColor"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/text_after_is_issued"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whileColor"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:text="实际出票后展示"
+                android:textColor="@color/text_gray_color"
+                android:textSize="10dp" />
+
+            <!-- 撤单按钮 -->
+            <FrameLayout
+                android:id="@+id/fl_button_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/whileColor">
+
+                <TextView
+                    android:id="@+id/text_button"
+                    android:layout_width="87dp"
+                    android:layout_height="29dp"
+                    android:layout_gravity="right"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/shape_red_text_bg"
+                    android:gravity="center"
+                    android:text="撤单"
+                    android:textColor="@color/colorAccent" />
+
+            </FrameLayout>
+            <!-- 跟单的选择倍数 -->
+            <include layout="@layout/bottom_documentary_information" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

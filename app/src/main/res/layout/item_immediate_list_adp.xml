@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:background="@color/whileColor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:id="@+id/text_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:background="@drawable/shape_drawable_text_bg"
+            android:padding="3dp"
+            android:text="未开始"
+            android:textColor="@color/colorAccent"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/text_start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="2019/08/04第2019098期"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/text_analysis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/icon_down"
+            android:gravity="right"
+            android:padding="10dp"
+            android:text="查看分析"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="1 0 3 3 3 1 3 0 1 0 1 1 3 3"
+        android:textColor="@color/colorAccent"
+        android:textSize="13dp" />
+
+</LinearLayout>
